@@ -184,8 +184,9 @@ function run() {
   knownWords = knownWords.replaceAll("\r", ",")
   knownWords = knownWords.replaceAll("\n", ",")
   knownWords = knownWords.replaceAll("\t", ",")
-  console.log(knownWords)
- 
+
+  knownWords = knownWords.toLowerCase()
+  
   while (knownWords.indexOf(",") > 0) {
     var newWord = knownWords.slice(0, knownWords.indexOf(","));
 
