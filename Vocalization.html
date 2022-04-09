@@ -179,6 +179,8 @@ function run() {
   var knownWords = document.getElementById('knownWords').value;
   //build a list of 1,2,3,4 grams
   var errors = []
+  babyWords = []
+
   
   knownWords = knownWords.replaceAll(" ", ",")
   knownWords = knownWords.replaceAll("\r", ",")
